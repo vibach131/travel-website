@@ -1,0 +1,772 @@
+/* Basic page styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+    background-color: white;
+}
+
+
+/* Navigation */
+
+header {
+    background-color: #a9c4ff;
+    border-bottom: 1px solid #777;
+}
+
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px 45px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.start-button,
+.button {
+    display: inline-block;
+    background-color: #000;
+    color: white !important;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 4px;
+}
+
+
+/* Main page */
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+/* Hero section */
+
+.hero {
+    padding: 35px 65px 45px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 0 0 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    margin: 0 0 50px;
+}
+
+
+/* Dream Destinations Section */
+
+.destinations-section {
+    padding: 0 65px 60px;
+}
+
+.destinations-section h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.destination-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.destination-card {
+    flex: 1;
+}
+
+.destination-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.destination-card h3 {
+    font-size: 16px;
+    margin: 15px 0 7px;
+}
+
+.destination-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+/* Everything You Need to Travel */
+
+.travel-section {
+    display: flex;
+    padding: 40px 65px 70px;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.travel-info {
+    flex: 1;
+}
+
+.travel-info h2 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.travel-info h3 {
+    font-size: 16px;
+    margin: 25px 0 8px;
+}
+
+.travel-info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    max-width: 400px;
+}
+
+.travel-info .button {
+    margin-top: 5px;
+}
+
+.travel-photo {
+    flex: 1;
+}
+
+.travel-photo img {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+/* Find Your Travel Style */
+
+.travel-style {
+    padding: 20px 65px 70px;
+}
+
+.travel-style h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.style-cards {
+    display: flex;
+    gap: 45px;
+}
+
+.style-card {
+    flex: 1;
+}
+
+.style-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.style-card h3 {
+    font-size: 16px;
+    margin: 15px 0 7px;
+}
+
+.style-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* Find Inspiration Section */
+
+.inspiration-section {
+    padding: 20px 65px 100px;
+}
+
+.inspiration-section h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.inspiration-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.inspiration-card {
+    flex: 1;
+    border: 1px solid #3fcac5;
+    border-radius: 6px;
+    padding: 25px;
+    min-height: 150px;
+}
+
+.inspiration-card h3 {
+    font-size: 16px;
+    margin: 0 0 25px;
+}
+
+.inspiration-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* Footer */
+
+.footer {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 45px 0 55px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-content h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 0 15px;
+}
+
+.footer-content p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    color: #777;
+    font-size: 12px;
+}
+
+
+/* Dream Destinations Page */
+
+.destinations-hero {
+    padding: 65px 65px 30px;
+}
+
+.destinations-hero h1 {
+    font-size: 42px;
+    margin: 0 0 15px;
+}
+
+.destinations-hero p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 650px;
+}
+
+.santorini-hero-image {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    margin: 0 0 45px;
+}
+
+
+/* Santorini Information */
+
+.santorini-info {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 65px 45px;
+}
+
+.santorini-info h2 {
+    font-size: 18px;
+    margin: 0 0 18px;
+}
+
+.santorini-info p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+/* Santorini Experiences */
+
+.santorini-experiences {
+    display: flex;
+    gap: 30px;
+    padding: 0 65px 45px;
+}
+
+.experience-card {
+    flex: 1;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.experience-card h3 {
+    font-size: 16px;
+    margin: 15px 0 7px;
+}
+
+.experience-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* Quick Travel Guide */
+
+.quick-guide {
+    width: 500px;
+    margin: 0 auto;
+    padding: 0 0 55px;
+}
+
+.quick-guide h3 {
+    font-size: 14px;
+    margin: 0 0 6px;
+}
+
+.quick-guide p {
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 2px 0;
+}
+
+
+/* More Dream Destinations */
+
+.more-destinations {
+    padding: 10px 65px 70px;
+}
+
+.more-destinations h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.more-destination-cards {
+    display: flex;
+    gap: 25px;
+}
+
+.more-card {
+    flex: 1;
+}
+
+.more-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.more-card h3 {
+    font-size: 15px;
+    margin: 15px 0 7px;
+}
+
+.more-card p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* =========================
+   EAT & EXPLORE PAGE
+   ========================= */
+
+.eat-hero {
+    position: relative;
+    margin: 0 0 40px 0;
+}
+
+.eat-hero img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.eat-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.eat-hero-content h1 {
+    font-size: 58px;
+    margin: 0 0 30px;
+}
+
+.eat-hero-content p {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 120px auto 25px;
+    max-width: 700px;
+}
+
+.eat-section {
+    max-width: 1070px;
+    margin: 0 auto 60px;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.eat-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.eat-text {
+    flex: 1;
+}
+
+.eat-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.eat-text p {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.eat-section > img {
+    width: 48%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.black-button,
+.gray-button {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.black-button {
+    background-color: #000;
+    color: white;
+}
+
+.gray-button {
+    background-color: #e5e5e5;
+    color: #111;
+}
+
+.featured {
+    max-width: 1070px;
+    margin: 0 auto 55px;
+}
+
+.featured > h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: 1.45fr 1fr;
+    gap: 25px;
+}
+
+.featured-large img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.featured-large h3,
+.featured-small h3 {
+    font-size: 16px;
+    margin: 15px 0 8px;
+}
+
+.featured-large p,
+.featured-small p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 0 0 5px;
+}
+
+.featured-small {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.featured-small img {
+    width: 100%;
+    height: 195px;
+    object-fit: cover;
+}
+
+.explore-way {
+    max-width: 1070px;
+    margin: 0 auto 60px;
+}
+
+.explore-way h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 120px;
+    row-gap: 35px;
+}
+
+.explore-grid p {
+    color: #888;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-top: 35px;
+}
+
+
+/* =========================
+   PLAN YOUR TRIP PAGE
+   ========================= */
+
+.plan-intro {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 55px 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.plan-intro > div {
+    flex: 1;
+}
+
+.plan-intro h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.plan-intro p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.plan-intro img {
+    width: 45%;
+    height: 340px;
+    object-fit: cover;
+}
+
+.start-planning-button {
+    display: block;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    margin: 20px 0 12px;
+}
+
+.plan-intro small {
+    color: #777;
+    font-size: 11px;
+}
+
+.travel-tips {
+    max-width: 1070px;
+    margin: 0 auto 60px;
+}
+
+.travel-tips h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 15px;
+}
+
+.tip-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.tip-card h3 {
+    font-size: 13px;
+    margin: 10px 0 5px;
+}
+
+.tip-card p {
+    color: #888;
+    font-size: 11px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+/* =========================
+   FEEDBACK PAGE
+   ========================= */
+
+.feedback-intro {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 55px 0 35px;
+    display: flex;
+    gap: 55px;
+}
+
+.feedback-intro > div {
+    flex: 1;
+}
+
+.feedback-intro h1 {
+    font-size: 38px;
+    line-height: 1.1;
+    margin: 0 0 15px;
+}
+
+.feedback-intro p:first-of-type {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.feedback-intro p:last-of-type {
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.feedback-intro img {
+    width: 43%;
+    height: 365px;
+    object-fit: cover;
+}
+
+.feedback-form {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 20px 0 70px;
+}
+
+.feedback-form h2 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.feedback-form form {
+    max-width: 500px;
+}
+
+.feedback-form label {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 6px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.feedback-form textarea {
+    height: 85px;
+    resize: vertical;
+}
+
+.name-fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
