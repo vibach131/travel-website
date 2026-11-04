@@ -770,3 +770,774 @@ main {
     color: white;
     cursor: pointer;
 }
+/* ===================================
+   MOBILE WEB ASSIGNMENT
+   Responsive Design - Wander Guide
+   =================================== */
+
+/* Responsive images */
+img {
+    max-width: 100%;
+}
+
+/* Match homepage HTML class names */
+.home-intro {
+    padding: 35px 65px 45px;
+}
+
+.home-intro h1 {
+    font-size: 42px;
+    margin: 0 0 15px;
+}
+
+.home-intro p {
+    max-width: 650px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.home-hero img {
+    display: block;
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    margin-bottom: 50px;
+}
+
+.dream-destinations {
+    padding: 0 65px 60px;
+}
+
+.dream-destinations h2,
+.travel-information h2,
+.inspiration h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.travel-information {
+    display: flex;
+    padding: 40px 65px 70px;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.travel-information-text,
+.travel-information-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.travel-item h3 {
+    font-size: 16px;
+    margin: 25px 0 8px;
+}
+
+.travel-item p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.travel-information-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.travel-style-cards {
+    display: flex;
+    gap: 45px;
+}
+
+.travel-style-card {
+    flex: 1;
+    min-width: 0;
+}
+
+.travel-style-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.travel-style-card h3 {
+    font-size: 16px;
+    margin: 15px 0 7px;
+}
+
+.travel-style-card p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.inspiration {
+    padding: 20px 65px 100px;
+}
+
+/* Tablet screens */
+@media (max-width: 900px) {
+
+    nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home-intro,
+    .dream-destinations,
+    .travel-information,
+    .travel-style,
+    .inspiration {
+        padding: 30px 25px;
+    }
+
+    .destination-cards,
+    .travel-style-cards,
+    .inspiration-cards {
+        flex-wrap: wrap;
+    }
+
+    .destination-card,
+    .travel-style-card,
+    .inspiration-card {
+        flex: 1 1 240px;
+        min-width: 0;
+    }
+
+    .travel-information {
+        flex-direction: column;
+    }
+
+    .travel-information-image img {
+        height: 300px;
+        min-height: 0;
+    }
+
+    .footer {
+        padding: 30px 25px;
+    }
+}
+
+/* Mobile phone screens */
+@media (max-width: 600px) {
+
+    nav {
+        padding: 18px 15px;
+    }
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .home-intro,
+    .dream-destinations,
+    .travel-information,
+    .travel-style,
+    .inspiration {
+        padding: 25px 18px;
+    }
+
+    .home-intro h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .home-intro p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .home-hero img {
+        height: 230px;
+        margin-bottom: 25px;
+    }
+
+    .dream-destinations h2,
+    .travel-information h2,
+    .travel-style h2,
+    .inspiration h2 {
+        font-size: 24px;
+    }
+
+    .destination-cards,
+    .travel-style-cards,
+    .inspiration-cards {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .destination-card,
+    .travel-style-card,
+    .inspiration-card {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .destination-card img,
+    .travel-style-card img {
+        height: 220px;
+    }
+
+    .travel-information {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .travel-information-image img {
+        height: 230px;
+    }
+
+    .inspiration-card {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 30px 18px;
+    }
+
+    .start-button {
+        text-align: center;
+    }
+}
+/* ===================================
+   MOBILE RESPONSIVE DESTINATIONS PAGE
+   =================================== */
+
+/* Tablet screens */
+@media (max-width: 900px) {
+
+    .destinations-hero {
+        padding: 40px 25px 25px;
+    }
+
+    .destinations-hero h1 {
+        font-size: 34px;
+    }
+
+    .santorini-hero-image {
+        height: 320px;
+    }
+
+    .santorini-info {
+        padding: 20px 25px 40px;
+    }
+
+    .santorini-experiences {
+        padding: 0 25px 40px;
+        gap: 20px;
+    }
+
+    .experience-card {
+        min-width: 0;
+    }
+
+    .experience-card img {
+        height: 230px;
+    }
+
+    .quick-guide {
+        width: 100%;
+        max-width: 500px;
+        padding: 0 25px 45px;
+    }
+
+    .more-destinations {
+        padding: 20px 25px 50px;
+    }
+
+    .more-destination-cards {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .more-card {
+        flex: 1 1 220px;
+        min-width: 0;
+    }
+}
+
+/* Mobile phone screens */
+@media (max-width: 600px) {
+
+    .destinations-hero {
+        padding: 30px 18px 20px;
+    }
+
+    .destinations-hero h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .destinations-hero p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .santorini-hero-image {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        margin-bottom: 25px;
+    }
+
+    .santorini-info {
+        padding: 15px 18px 35px;
+    }
+
+    .santorini-info h2 {
+        font-size: 22px;
+    }
+
+    .santorini-info p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .santorini-experiences {
+        flex-direction: column;
+        padding: 0 18px 35px;
+        gap: 30px;
+    }
+
+    .experience-card {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .experience-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .experience-card h3 {
+        font-size: 18px;
+    }
+
+    .experience-card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .quick-guide {
+        width: 100%;
+        padding: 0 18px 40px;
+    }
+
+    .quick-guide h3 {
+        font-size: 18px;
+    }
+
+    .quick-guide p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .more-destinations {
+        padding: 20px 18px 50px;
+    }
+
+    .more-destinations h2 {
+        font-size: 24px;
+    }
+
+    .more-destination-cards {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .more-card {
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .more-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .more-card h3 {
+        font-size: 18px;
+    }
+
+    .more-card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* PLAN YOUR TRIP - ADDITIONAL STYLING */
+
+.plan-intro img {
+    border-radius: 5px;
+}
+
+.trip-planner {
+    max-width: 1070px;
+    margin: 0 auto 70px;
+    padding: 35px;
+    background-color: #f3f6ff;
+    border-radius: 8px;
+}
+
+.trip-planner h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.trip-planner p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.trip-planner form {
+    max-width: 650px;
+    display: grid;
+    gap: 12px;
+}
+
+.trip-planner label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.trip-planner input,
+.trip-planner select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    background: white;
+}
+
+.trip-planner button {
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+#trip-result {
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+#trip-result h3 {
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE PLAN YOUR TRIP PAGE */
+
+@media (max-width: 900px) {
+    .plan-intro,
+    .travel-tips,
+    .trip-planner {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .plan-intro {
+        gap: 25px;
+    }
+
+    .tips-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .plan-intro {
+        flex-direction: column;
+        padding: 30px 0;
+        margin: 0 18px;
+    }
+
+    .plan-intro img {
+        width: 100%;
+        height: 240px;
+    }
+
+    .travel-tips {
+        margin: 0 18px 40px;
+    }
+
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tip-card img {
+        height: 200px;
+    }
+
+    .trip-planner {
+        margin: 0 18px 40px;
+        padding: 22px;
+    }
+
+    .footer {
+        padding: 30px 18px;
+    }
+}
+
+/* FEEDBACK PAGE ADDITIONAL STYLING */
+
+.feedback-intro img {
+    border-radius: 5px;
+}
+
+.feedback-form select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.feedback-form button:hover {
+    background-color: #333;
+}
+
+#feedback-confirmation {
+    color: #276749;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.wander-survey {
+    max-width: 1070px;
+    margin: 0 auto 70px;
+    padding: 35px;
+    background-color: #f3f6ff;
+    border-radius: 6px;
+}
+
+.wander-survey h2 {
+    font-size: 26px;
+    margin-top: 0;
+}
+
+.wander-survey p {
+    color: #777;
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+/* RESPONSIVE FEEDBACK PAGE */
+
+@media (max-width: 900px) {
+    .feedback-intro,
+    .feedback-form {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .wander-survey {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .feedback-intro {
+        flex-direction: column;
+        padding: 30px 0;
+        margin: 0 18px;
+    }
+
+    .feedback-intro img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .feedback-intro h1 {
+        font-size: 30px;
+    }
+
+    .feedback-form {
+        margin: 0 18px;
+        padding: 20px 0 40px;
+    }
+
+    .name-fields {
+        grid-template-columns: 1fr;
+    }
+
+    .wander-survey {
+        margin: 0 18px 40px;
+        padding: 22px;
+    }
+}
+
+/* ==================================
+   FEEDBACK PAGE - FIGMA LAYOUT
+   ================================== */
+
+/* Main introduction section */
+.feedback-intro {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding: 55px 0 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 55px;
+}
+
+/* Left side text */
+.feedback-intro > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.feedback-intro h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 0 0 20px;
+    max-width: 450px;
+}
+
+.feedback-intro p:first-of-type {
+    color: #999;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.feedback-intro p:last-of-type {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 480px;
+}
+
+/* Taller sunset picture */
+.feedback-intro img {
+    width: 43%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+}
+
+/* Move the form closer to the introduction */
+.feedback-form {
+    max-width: 1070px;
+    margin: -200px auto 0;
+    padding: 0 0 90px;
+    position: relative;
+}
+
+/* Keep form in left column */
+.feedback-form form {
+    max-width: 480px;
+}
+
+.feedback-form h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Form fields */
+.feedback-form input,
+.feedback-form textarea,
+.feedback-form select {
+    font-size: 13px;
+    padding: 12px;
+}
+
+.feedback-form textarea {
+    height: 115px;
+}
+
+.feedback-form button {
+    padding: 14px;
+}
+
+/* Survey section */
+.wander-survey {
+    margin-top: 30px;
+}
+
+/* Tablet layout */
+@media (max-width: 900px) {
+    .feedback-intro {
+        margin: 0 25px;
+        gap: 30px;
+    }
+
+    .feedback-intro img {
+        width: 43%;
+        height: 500px;
+    }
+
+    .feedback-form {
+        margin: -130px 25px 0;
+    }
+
+    .feedback-form form {
+        max-width: 50%;
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .feedback-intro {
+        flex-direction: column;
+        margin: 0 18px;
+        padding: 30px 0;
+    }
+
+    .feedback-intro h1 {
+        font-size: 32px;
+    }
+
+    .feedback-intro img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .feedback-form {
+        margin: 0 18px;
+        padding: 20px 0 45px;
+    }
+
+    .feedback-form form {
+        max-width: 100%;
+    }
+
+    .wander-survey {
+        margin: 0 18px 40px;
+    }
+}

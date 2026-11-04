@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Wander Guide | Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <div class="logo">Wander Guide</div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="eat-explore.html">Eat & Explore</a>
+                <a href="plan-trip.html">Plan Your Trip</a>
+                <a href="feedback.html">Feedback</a>
+                <a href="plan-trip.html#trip-form"
+                   class="start-button">
+                    Start Planning
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INTRO SECTION -->
+        <section class="feedback-intro">
+
+            <div>
+                <h1>Find Your Dream Destination</h1>
+
+                <p>
+                    Tell us about your travel style and preferences.
+                </p>
+
+                <p>
+                    Everyone has a different idea of the perfect
+                    vacation. Some travelers want to relax on a
+                    tropical beach, while others prefer exploring
+                    new cities, trying local foods, or experiencing
+                    outdoor adventures.
+                    Share your travel preferences below to help
+                    identify the types of destinations and
+                    experiences that interest you most.
+                    You can also use this form to suggest
+                    destinations or provide feedback about
+                    Wander Guide.
+                </p>
+            </div>
+
+            <img src="images/feedback-sunset.jpg"
+                 alt="Beautiful sunset over the ocean">
+
+        </section>
+
+        <!-- TRAVEL PREFERENCES FORM -->
+        <section class="feedback-form">
+
+            <h2>Tell Us About Your Travel Style</h2>
+
+            <form id="feedback-form">
+
+                <div class="name-fields">
+
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text"
+                               id="first-name"
+                               placeholder="First name"
+                               required>
+                    </div>
+
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text"
+                               id="last-name"
+                               placeholder="Last name"
+                               required>
+                    </div>
+
+                </div>
+
+                <label for="email">Email Address</label>
+                <input type="email"
+                       id="email"
+                       placeholder="example@gmail.com"
+                       required>
+
+                <label for="travel-style">Favorite Travel Style</label>
+                <select id="travel-style" required>
+                    <option value="">Select your travel style</option>
+                    <option>Beach & Relaxation</option>
+                    <option>Adventure & Outdoors</option>
+                    <option>Food & Culture</option>
+                    <option>City Exploration</option>
+                    <option>Luxury Travel</option>
+                </select>
+
+                <label for="message">Your Message</label>
+                <textarea id="message"
+                          placeholder="Enter your question, destination suggestion, or feedback..."
+                          required></textarea>
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+            <p id="feedback-confirmation"
+               role="status" aria-live="polite"></p>
+
+        </section>
+
+        <!-- USABILITY SURVEY -->
+        <section class="wander-survey">
+
+            <h2>Help Us Improve Wander Guide</h2>
+
+            <p>
+                We would love to hear your thoughts!
+                Take our short website usability survey
+                and let us know how we can improve
+                your experience.
+            </p>
+
+            <a class="button"
+               href="https://docs.google.com/forms/d/e/1FAIpQLSf2qylImKgCR3jWNtxOmNqrvQ4F_kqjACd1g8vZiEAhakwgrg/viewform?usp=publish-editor"
+               target="_blank"
+               rel="noopener noreferrer">
+                Take Our Website Survey
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <h3>Wander Guide</h3>
+            <p>Explore. Plan. Experience.</p>
+        </div>
+    </footer>
+
+    <script>
+        const feedbackForm =
+            document.getElementById("feedback-form");
+
+        const confirmation =
+            document.getElementById("feedback-confirmation");
+
+        feedbackForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            confirmation.textContent =
+                "Thank you for sharing your travel preferences! " +
+                "Your feedback has been entered on this page.";
+
+            feedbackForm.reset();
+        });
+    </script>
+
+</body>
+</html>
